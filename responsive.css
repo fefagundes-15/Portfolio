@@ -1,0 +1,70 @@
+@media (max-width: 1200px){
+    main{
+        width: 100%;
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-content{
+        width: 100%;
+        align-items: center;
+        margin-bottom: 15%;
+    }
+
+    main .main-content .text, .skills{
+        text-align: justify;
+        width: 100%;
+    }
+
+    main .main-content h2{
+        text-align: center;
+        width: 100%;
+    }
+
+    main .main-content .text p{
+        width: 100%;
+        font-size: 0.9em;
+    }
+
+    main .skills .cards-container, .main-content .text p{
+        margin-top: 32px;
+    }
+
+    main figure img{
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 700px){
+    header{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    header nav{
+        margin-top: 24px;
+    }
+
+    header nav a{
+        font-size: 1em;
+    }
+
+    main .skills .cards-container .card{
+        width: 60px;
+        height: 60px;
+    }
+
+    main .main-content .text h2, .main-content .skills h2{
+        font-size: 1.6em;
+    }
+
+    main figure img{
+        width: 250px;
+        height: 250px;
+    }
+}
