@@ -161,12 +161,19 @@ You can find more projects in my public repositories.
 
 ---
 
-## 📈 GitHub stats
+## 📊 GitHub Stats
 
-> Replace `fefagundes-15` below if you ever change your username.
+<div align="center">
+  <img height="180em" src="https://github-readme-stats-sigma-five.vercel.app/api?username=fefagundes-15&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117&title_color=3B82F6&icon_color=3B82F6&text_color=c9d1d9" />
+  <img height="180em" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=fefagundes-15&layout=compact&theme=radical&hide_border=true&bg_color=0d1117&title_color=3B82F6&text_color=c9d1d9" />
+</div>
 
-![Felipe's GitHub stats](https://github-readme-stats.vercel.app/api?username=fefagundes-15&show_icons=true&theme=github_dark)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=fefagundes-15&layout=compact&theme=github_dark)
+<br>
+
+<div align="center">
+  <img src="https://github-readme-streak-stats-eight.vercel.app/?user=fefagundes-15&theme=radical&hide_border=true&background=0d1117&ring=3B82F6&fire=3B82F6&currStreakLabel=3B82F6" />
+</div>
+
 
 ---
 
