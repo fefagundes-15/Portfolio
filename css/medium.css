@@ -1,0 +1,154 @@
+/*#region Medium Devices - Tablets */
+@media screen and (min-width: 48rem) {
+
+  :root {
+    --header-height: 5.1875rem;
+  }
+
+  /* Hamburger menu */
+  .hamburger-menu {
+    display: none;
+  }
+
+  /* Back to top */
+  .btnBackToTop {
+    display: none;
+  }
+
+  /* General classes */
+  .underline-highlight {
+    width: 20rem;
+  }
+
+  section {
+    scroll-margin-top: var(--header-height, 5.1875rem);
+  }
+
+  /* Header */
+  .header {
+    padding: .3rem;
+  }
+
+  .header__nav {
+    position: static;
+    height: auto;
+    width: auto;
+    background: transparent;
+    padding: 0;
+    margin-right: .4rem;
+  }
+
+  .header__nav ul {
+    flex-direction: row;
+    gap: 1.3rem;
+    font-size: 0.8rem;
+  }
+
+  .header__nav a {
+    color: inherit;
+  }
+
+  .header__nav__language {
+    padding: .2rem .4rem;
+  }
+
+  .header__nav__language img {
+    width: 1.75rem;
+  }
+
+  .dropdown__options {
+    width: 11rem;
+  }
+
+  .logo-img {
+    margin-right: 0;
+  }
+
+  .header__logo__text .title {
+    font-size: 1.1rem;
+  }
+
+  .header__logo__text .subtitle {
+    font-size: 0.9rem;
+  }
+
+  /* Home */
+  .home__buttons {
+    flex-direction: row;
+  }
+
+  .home__cards {
+    flex-direction: row;
+  }
+
+  .home__exp {
+    padding: 0 1.5rem;
+  }
+
+  /* About */
+  .about__content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    align-items: start;
+  }
+
+  .about__content img {
+    margin: 0;
+  }
+
+  /* Projects */
+  .projects__grid {
+    grid-template-columns: repeat(2, minmax(9.375rem, 1fr));
+  }
+
+  /* Skills */
+  .skills__tools__content {
+    grid-template-columns: repeat(4, minmax(9.375rem, 1fr));
+  }
+
+  /* Contact */
+  .contact__content {
+    flex-direction: row;
+  }
+
+  .contact__card {
+    flex: 1;
+  }
+
+  /* Footer */
+  .footer__main {
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .footer__nav {
+    margin-top: 0;
+  }
+
+  .footer__bottom {
+    align-items: center;
+  }
+
+  .footer__copyright {
+    text-align: center;
+  }
+
+  .footer__subtext {
+    justify-content: flex-start;
+  }
+
+  .footer__badges {
+    justify-content: flex-end;
+  }
+
+  .footer__cta {
+    margin-top: .5rem;
+  }
+
+  .footer__link {
+    font-size: .9rem;
+  }
+}
+
+/*#endregion Medium Devices - Tablets */

@@ -1,0 +1,255 @@
+/* Esconde checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* Botão hamburger */
+.hamburger-menu {
+  display: block;
+  width: 30px;
+  height: 22px;
+  position: relative;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* Barras */
+.hamburger-menu span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--text-color);
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.hamburger-menu span:nth-child(1) {
+  top: 0;
+}
+
+.hamburger-menu span:nth-child(2) {
+  top: 9px;
+}
+
+.hamburger-menu span:nth-child(3) {
+  top: 18px;
+}
+
+/* Animação para X quando aberto */
+#menu-toggle:checked+.hamburger-menu span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 9px;
+}
+
+#menu-toggle:checked+.hamburger-menu span:nth-child(2) {
+  opacity: 0;
+}
+
+#menu-toggle:checked+.hamburger-menu span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 9px;
+}
+
+/* Menu fechado (mobile) */
+.header__nav {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  height: 100vh;
+  width: 60%;
+  background: var(--background-color);
+  padding-top: 5rem;
+  transition: right 0.3s ease;
+  z-index: 9;
+}
+
+.header__nav ul {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.5rem;
+}
+
+.header__nav ul li a {
+  position: relative;
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 600;
+  display: block;
+  padding: 1rem 0;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s ease-in-out;
+}
+
+.header__nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  /* espessura da linha */
+  width: 100%;
+  background: var(--gradient-primary-color);
+  transform: scaleX(0);
+  /* começa invisível */
+  transform-origin: left;
+  /* começa a desenhar da esquerda */
+  transition: transform 0.3s ease;
+  /* suavidade */
+}
+
+.header__nav ul li a:hover::after {
+  transform: scaleX(1);
+  /* linha aparece da esquerda pra direita */
+}
+
+/* Quando marcado, abre menu */
+#menu-toggle:checked~.header__nav {
+  right: 0;
+  background: var(--background-color);
+}
+
+[data-theme="light"] #menu-toggle:checked~.header__nav {
+  background: var(--background-color-light);
+}
+
+[data-theme="light"] .header__nav ul li a {
+  color: var(--text-color);
+}
+
+[data-theme="light"] .header__nav__language,
+[data-theme="light"] .header__nav__mode {
+  outline: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="light"] .dropdown__options__card {
+  background-color: color-mix(in srgb, var(--text-color), transparent 95%);
+}
+
+[data-theme="light"] .dropdown__options__card a p {
+  color: var(--text-color);
+}
+
+[data-theme="light"] .header__nav::before {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+[data-theme="light"] .hamburger-menu span {
+  background: var(--text-color);
+}
+
+/* Overlay atrás do menu */
+.header__nav::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(2px);
+  /* desfoque */
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+  /* fica atrás do menu */
+}
+
+/* Quando menu está aberto */
+#menu-toggle:checked~.header__nav::before {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Other buttons */
+.header__nav__buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto 0;
+  gap: 0.7rem;
+  position: sticky;
+}
+
+.header__nav__language img {
+  width: 100%;
+  max-width: 2rem;
+  margin: auto 0.3rem;
+}
+
+.dropdown.show {
+  display: revert;
+}
+
+.dropdown__options {
+  display: none;
+  position: fixed;
+  background-color: color-mix(in srgb, var(--background-color), #fff 8%);
+  border-radius: 15px;
+  user-select: none;
+}
+
+.dropdown__options a {
+  display: inline-flex;
+  /* padding: .8rem; */
+  width: 100%;
+  transition: all .3s ease-in-out;
+}
+
+.dropdown__options a:first-child {
+  border-bottom: 1px solid color-mix(in srgb, var(--background-color), #fff 40%);
+}
+
+.dropdown__options a:first-child:hover {
+  background-color: color-mix(in srgb, var(--background-color), #fff 20%);
+  border-radius: 15px 15px 0 0;
+}
+
+.dropdown__options a:last-child:hover {
+  background-color: color-mix(in srgb, var(--background-color), #fff 20%);
+  border-radius: 0 0 15px 15px;
+}
+
+.dropdown__options__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  padding: .6rem;
+  gap: .6rem;
+  transition: background-color .5s ease-in-out;
+}
+
+.dropdown__options__card a:last-child {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0.2rem 0;
+}
+
+.dropdown__options__card p {
+  font-size: 0.9rem;
+  font-weight: 250;
+}
+
+.dropdown__options__card img {
+  width: 100%;
+  max-width: 1.5rem;
+  padding: 0.4rem;
+}
+
+.header__nav__language {
+  outline: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0.3rem 0.6rem;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+}
+
+.header__nav__language:hover {
+  background-color: color-mix(in srgb, var(--background-color), #fff 20%)
+}

@@ -1,0 +1,338 @@
+/*#region Extra Large Devices */
+@media screen and (min-width: 110rem) {
+  :root {
+    --grid-margin: 4rem;
+    --margin-bottom-section: 15rem;
+  }
+
+  /* General classes */
+  .container:not(.footer) {
+    margin-left: var(--grid-margin);
+    margin-right: var(--grid-margin);
+  }
+
+  .title {
+    font-size: 5rem;
+  }
+
+  .subtitle {
+    font-size: 2.2rem;
+    margin-bottom: 6rem;
+  }
+
+  .underline-highlight {
+    width: 30rem;
+    height: 0.8rem;
+  }
+
+  .p-text {
+    font-size: 1.5rem;
+    line-height: 1.7;
+  }
+
+  /* Header */
+  .header {
+    padding-left: var(--grid-margin);
+    padding-right: var(--grid-margin);
+  }
+
+  .header__logo {
+    margin: 0.5rem 2rem;
+  }
+
+  .header__logo img {
+    max-width: 5.5rem;
+  }
+
+  .header__logo__text .title {
+    font-size: 1.8rem;
+  }
+
+  .header__logo__text .subtitle {
+    font-size: 1.25rem;
+  }
+
+  .header__nav ul {
+    font-size: 1.75rem;
+    gap: 2.5rem;
+  }
+
+  .header__nav a {
+    padding: 1rem 1.5rem;
+  }
+
+  .dropdown__options__card p {
+    font-size: 1.1rem;
+  }
+
+  /* Home */
+  .home .p-text:first-of-type {
+    font-size: 2.2rem;
+    margin: 5rem auto;
+    max-width: 80rem;
+  }
+
+  .home__buttons {
+    gap: 5rem;
+    margin: 5rem 0;
+  }
+
+  .btn,
+  .btn2 {
+    padding: 1.2rem 2.5rem;
+    font-size: 1.3rem;
+    min-width: 12rem;
+  }
+
+  .home__cards {
+    margin: 5rem auto 8rem;
+    max-width: 100rem;
+  }
+
+  .home__exp {
+    padding: 2.5rem;
+  }
+
+  .home__exp__number {
+    font-size: 3rem;
+  }
+
+  .home__exp__text {
+    font-size: 1.3rem;
+  }
+
+  .home__article .icons {
+    margin-bottom: 10rem;
+    font-size: 3rem;
+  }
+
+  .icons a {
+    padding: 1.2rem 2.5rem;
+  }
+
+  .about__content {
+    gap: 8rem;
+    max-width: 120rem;
+  }
+
+  .about__content img {
+    margin-bottom: 16rem;
+    max-width: 35rem;
+  }
+
+  .about__paragraphs {
+    gap: 2.5rem;
+  }
+
+  .skills__tools__content {
+    grid-template-columns: repeat(6, minmax(14rem, 1fr));
+    gap: 3rem;
+    max-width: 140rem;
+    margin: 0 auto;
+  }
+
+  .skills__tools__tool {
+    padding: 3rem 2rem;
+  }
+
+  .skills__tools__tool img {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .skills__tools__tool p {
+    font-size: 1.2rem;
+  }
+
+  .skills__category {
+    font-size: 4rem;
+    margin: 6rem 0 3rem;
+  }
+
+  .exp__jobs {
+    margin: 0 24rem;
+    padding: 4rem;
+  }
+
+  .exp__jobs li h2 {
+    font-size: 3.5rem;
+  }
+
+  .exp__jobs li h3 {
+    font-size: 2.5rem;
+  }
+
+  .exp__jobs li h4 {
+    font-size: 1.4rem;
+    margin: 0 0 3rem;
+  }
+
+  .exp__jobs__description {
+    font-size: 1.3rem;
+    line-height: 1.8;
+  }
+
+  .tags {
+    gap: 1.2rem;
+    margin-top: 2.5rem;
+  }
+
+  .exp__bubble-tag {
+    font-size: 1rem;
+    padding: 0.8rem 1.6rem;
+  }
+
+  .projects__grid {
+    grid-template-columns: repeat(4, minmax(12rem, 1fr));
+    gap: 3.5rem;
+    max-width: 160rem;
+    margin: 0 auto;
+  }
+
+  .projects__websites a img {
+    height: 20rem;
+  }
+
+  .projects__websites__card {
+    padding: 2.5rem;
+    gap: 2rem;
+  }
+
+  .projects__websites__card h2 {
+    font-size: 1.8rem;
+  }
+
+  .projects__websites__card p {
+    font-size: 1.2rem;
+    -webkit-line-clamp: 5;
+  }
+
+  .read-more-btn {
+    padding: 1rem 1.8rem;
+    font-size: 1.1rem;
+  }
+
+  .contact__content {
+    margin: 0 24rem;
+    border-radius: 2rem;
+  }
+
+  .contact__card {
+    padding: 3rem;
+  }
+
+  .contact__content__card {
+    gap: 2.5rem;
+  }
+
+  .contact__content__card i {
+    font-size: 3rem;
+  }
+
+  .contact__content__text p:first-of-type {
+    font-size: 1.1rem;
+  }
+
+  .contact__content__text p:last-of-type {
+    font-size: 1.6rem;
+  }
+
+  .contact__p {
+    font-size: 1.8rem;
+    margin: 6rem 0 var(--margin-bottom-section);
+  }
+
+  /* Footer */
+  .footer {
+    padding: 6rem 0 4rem;
+  }
+
+  .footer__content {
+    max-width: 140rem;
+    margin: 0 auto;
+  }
+
+  .footer__main {
+    gap: 8rem;
+    margin-bottom: 5rem;
+  }
+
+  .footer__section {
+    min-height: 18rem;
+  }
+
+  .footer__title {
+    font-size: 1.7rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .footer__contact-info {
+    gap: 1.5rem;
+  }
+
+  .footer__contact-item {
+    gap: 1.5rem;
+  }
+
+  .footer__contact-item i {
+    font-size: 1.4rem;
+  }
+
+  .footer__nav {
+    gap: 1.5rem;
+  }
+
+  .footer__link {
+    font-size: 1.2rem;
+  }
+
+  .footer__social {
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .footer__social-link {
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.5rem;
+  }
+
+  .footer__cv-btn {
+    padding: 1.5rem 3rem;
+    font-size: 1.2rem;
+  }
+
+  .footer__divider {
+    margin: 5rem 0 3rem;
+  }
+
+  .footer__bottom {
+    gap: 4rem;
+  }
+
+  .footer__copyright {
+    gap: 1rem;
+  }
+
+  .footer__subtext {
+    font-size: 1.1rem;
+  }
+
+  .footer__badges {
+    gap: 2.5rem;
+  }
+
+  .footer__badge {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+  }
+
+  .footer__back-to-top {
+    width: 4.5rem;
+    height: 4.5rem;
+    top: -3rem;
+    right: 5rem;
+  }
+}
+
+/*#endregion Extra Large Devices */
